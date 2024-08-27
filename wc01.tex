@@ -13,7 +13,7 @@
 \boxedpoints
 
 
-% \printanswers % Uncomment this line
+ \printanswers % Uncomment this line
 
 \begin{document}
 \maketitle
@@ -31,11 +31,35 @@ Lucky for you, he left clues behind to find the Chrononavigator. By using the fo
     \item The Chrononavigator is not in the Plumber's headquarters.
 \end{itemize}
 
+\begin{solution}
+    Based on the last clue, it becomes easier for us to determine where is the Chrononavigator. 
+
+    Considering that the Chrononavigator is not in the Plumber's headquarters, we move to clue number 1. The clue is logically equivalent to its contrapositive: If the Chrononavigator is not in the plumber's headquarters, then Mr Smoothy is not next to a Burger Shack. Which leads us to clue number 2. In clue number 2 on of the conditions is beign fulfilled: Mr Smoothy is not next to a Burger Shack. Which means that the tree in front of Billion Tower is an elm tree and the tree at the back of the tower is not an oak tree. Now we come at two possible conclusions: either the Chrononavigaotr is in the Argistix office, or it is buried under Baumann's store. Argistix office is a possible choice because it's condition of the tree in the tower's back not being an Oak is fulfilled. But it doesn't mean that if the tree in the back was an Oak or not, the Chrononavigator would be in Argistix office. Rather the 4th clue's contrapositive leads us to the real location of the Chrononavigator as the contrapositive of it is logically equivalent to the statement itself. The contrapositive of the 4th clue is: If the tree in front of the Billion Tower is an elm tree, then the Chrononavigator is buried under Baummann's store. The contrapositive of this contrapositive is the 4th clue itself. And we know that the elm tree is in fact, in front of the Billion Tower, hence the Chrononavigator is buried under Baumann's store.
+\end{solution}
+
 \titledquestion{Over 9000!!}
 For a set $X$, $\mathcal{P}(X)$ denotes the powerset of $X$.
 Show that $ \mathcal{P}(A) \subseteq \mathcal {P}(B)$ if and only if $ A \subseteq B$.
 \begin{solution}
-    
+    Since the proof is bi-directional, we will write down both directions and then prove them one-by-one.
+
+    \title{Direction 1}:
+    If $\mathcal{P}(A) \subseteq \mathcal{P}(B)$ then
+    $A \subseteq B$.
+
+    \title{Proof}:
+    If we suppose that the first part of the statement is true ($\mathcal{P}(A) \subseteq \mathcal{P}(B)$), then we know that $A \subseteq A$. As the power set of a set also contains the set itself, $A \in \mathcal{P}(A)$ and therefore by way of $ A \in \mathcal{P}(A) \subseteq \mathcal{P}(B)$, we show that $A \in \mathcal{P}(B)$. 
+
+    Hence, $A \subseteq B$.
+
+    \title{Direction 2}
+     If $A \subseteq B$ then
+     $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
+
+     \title{Proof}
+     Now we suppose that the first part of the statement ($A \subseteq B$) is true. It leads us to the following statement: $\forall x \subseteq A$ due to $x \in \mathcal{P}(A)$, then $x \subseteq B$. As $B \in \mathcal{P}(B)$, therefore $x \in \mathcal{P}(B)$. 
+
+     Hence, $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.    
 \end{solution}
 
 
@@ -46,7 +70,20 @@ If a graph can be colored with $k$ colors we say it is $k$-colorable.
 
 Prove that a graph is bipartite if and only if its 2-colorable.
 \begin{solution}
+    We will first prove the forward direction:
+    If a graph is bipartite, it is 2-colorable.
 
+    \title{Proof}:
+    \\
+    To show the above statement, assume a graph $G = (V,E)$ as a bipartite graph. It has 2 partitions: $A$ and $WB$. Both are disjoint sets of vertices $\in G$. If we draw an edge from $a \in A$ to $b \in B$, they get connected. Now we color the vertices in $A$ blue and the vertices in $B$ black. Via this coloring we have achieved two partitions of the graph $G$ with both partitions having different colors. Thus, a bipartite graph is 2-colorable.\\\\
+    Now we move to the second direction:
+    \\\\
+    If a graph is 2-colorable, it is bipartite. 
+
+    \title{Proof}:
+    \\
+    Assume that $G(V,E)$ is a 2-colorable graph. We will color all the vertices using 2 colors in such a way that no two adjacent vertices $a$ and $b$ are of the same color. The first group of vertices colored red can be grouped in the set $R$ and the second group of vertices colored yellow can be grouped in the set $Y$. These both sets are disjoint. Hence they both are partitions in $G$. Therefore $G$
+     is a 2-colorable graph due to being bipartite.
 \end{solution}
 
  
