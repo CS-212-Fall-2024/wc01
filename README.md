@@ -1,5 +1,5 @@
 # Weekly Challenge 01: Discrete Maths Refresher
-# CS 212 Nature of Computation, Fall 2024
+# CS 212 Nature of Computation, Fall 2025
 ***
 
 # Purpose
